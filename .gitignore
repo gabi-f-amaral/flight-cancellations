@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (raw files often large / sensitive)
+data/raw/*
+!data/raw/.gitkeep
+
+# Models
+models/*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.venv
+venv/
