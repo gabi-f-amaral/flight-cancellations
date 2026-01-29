@@ -21,26 +21,27 @@ The objective is to allow users to ask:
 - Forecasting cancellation risk for 2026
 
 ## Repository Structure
+## 📁 Project Structure
+
 flight-cancellation-prediction/
-│
-├── README.md
-├── .gitignore
-├── requirements.txt
+├── README.md                  # Project overview and instructions
+├── .gitignore                 # Git ignore rules
+├── requirements.txt           # Python dependencies
 │
 ├── data/
-│   ├── raw/
+│   ├── raw/                   # Raw, immutable data (not tracked)
 │   │   └── flights_raw.csv
-│   ├── processed/
-│   │   └── flights_cleaned.csv
+│   └── processed/             # Cleaned datasets used for modeling
+│       └── flights_cleaned.csv
 │
-├── notebooks/
+├── notebooks/                 # Exploratory and modeling notebooks
 │   ├── 01_data_loading_and_quality.ipynb
 │   ├── 02_eda.ipynb
 │   ├── 03_feature_engineering.ipynb
 │   ├── 04_modeling.ipynb
 │   └── 05_forecasting_2026.ipynb
 │
-├── src/
+├── src/                       # Reusable Python modules
 │   ├── __init__.py
 │   ├── data_cleaning.py
 │   ├── feature_engineering.py
@@ -48,17 +49,17 @@ flight-cancellation-prediction/
 │   ├── evaluation.py
 │   └── utils.py
 │
-├── reports/
+├── reports/                   # Written outputs
 │   ├── data_quality_report.md
 │   ├── figures/
 │   └── final_presentation.pptx
 │
-├── models/
+├── models/                    # Saved trained models
 │   └── best_model.pkl
 │
-└── app/
-    ├── app.py          # future web app / Streamlit
-    └── chatbot.py      # future LLM logic
+└── app/                       # Future deployment (Streamlit + LLM)
+    ├── app.py
+    └── chatbot.py
 
 ## Results
 (placeholder for later)
