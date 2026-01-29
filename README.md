@@ -29,32 +29,31 @@ The objective is to allow users to ask:
 - requirements.txt #Python dependencies
 - data/
 - raw/                   #Raw, immutable data (not tracked)
-    flights_raw.csv
-    processed/             #Cleaned datasets used for modeling
-        flights_cleaned.csv
+    - flights_raw.csv
+    - processed/             #Cleaned datasets used for modeling
+        - flights_cleaned.csv
 - notebooks/                 #Exploratory and modeling notebooks
-    1_data_loading_and_quality.ipynb
-    02_eda.ipynb
-    03_feature_engineering.ipynb
-    04_modeling.ipynb
-    05_forecasting_2026.ipynb
+    - 1_data_loading_and_quality.ipynb
+    - 02_eda.ipynb
+    - 03_feature_engineering.ipynb
+    - 04_modeling.ipynb
+    - 05_forecasting_2026.ipynb
 - src/                       #Reusable Python modules
-    __init__.py
-    data_cleaning.py
-    feature_engineering.py
-    modeling.py
-    evaluation.py
-    utils.py
+    - __init__.py
+    - data_cleaning.py
+    - feature_engineering.py
+    - modeling.py
+    - evaluation.py
+    - utils.py
 - reports/                   #Written outputs
-    data_quality_report.md
-    figures/
-    final_presentation.pptx
+    - data_quality_report.md
+    - figures/
+    - final_presentation.pptx
 - models/                    #Saved trained models
-    best_model.pkl
-
+    - best_model.pkl
 - app/                       #Future deployment (Streamlit + LLM)
-    app.py
-    chatbot.py
+    - app.py
+    - chatbot.py
 
 ## Results
 (placeholder for later)
